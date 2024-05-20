@@ -34,12 +34,12 @@ jobs:
                 echo $text
                 if [[ $text =~ (fix|patch) ]]; then
                   npm run release -- --release-as patch
-                  echo {{ Patching Versioning }}
+                  echo "{{ Patching Versioning }}"
                 elif [[ $text =~ (BREAKING\ CHANGE) ]]; then
                   npm run release -- --release-as patch
-                  echo {{ Major Versioning }}
+                  echo "{{ Major Versioning }}"
                 elif [[ $text =~ (feat) ]]; then
-                  echo {{ Minor Versioning }}
+                  echo "{{ Minor Versioning }}"
                   npm run release -- --release-as minor
                 else
                   npm run release -- --release-as patch
