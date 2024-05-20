@@ -30,13 +30,14 @@ jobs:
 
             - name: Check commit message for specific keywords
               run: |
-                if [[ "${{ github.event.workflow_run.head_commit.messag }}" =~ (fix|patch) ]]; then
+                text=$(git log -1 --no-merges --pretty=%B)
+                if [[ $text =~ (fix|patch) ]]; then
                   npm run release -- --release-as patch
                   echo {{ Patching Versioning }}
-                elif [[ "${{ github.event.workflow_run.head_commit.messag }}" =~ (BREAKING\ CHANGE) ]]; then
+                elif [[ $text =~ (BREAKING\ CHANGE) ]]; then
                   npm run release -- --release-as patch
                   echo {{ Major Versioning }}
-                elif [[ "${{ github.event.workflow_run.head_commit.messag }}" =~ (feat) ]]; then
+                elif [[ $text =~ (feat) ]]; then
                   echo {{ Minor Versioning }}
                   npm run release -- --release-as minor
                 else
