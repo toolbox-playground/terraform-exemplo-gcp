@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## 1.0.4 (2024-05-20)
+
+
+### Bug Fixes
+
+* fixing pipeline script ([87ffc4c](https://github.com/toolbox-playground/terraform-exemplo-basico-gcp/commit/87ffc4cccfaf261b9229276c8792e58eb4b90b28))
+
 ## 1.0.3 (2024-05-20)
 
 
