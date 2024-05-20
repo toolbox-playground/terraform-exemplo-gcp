@@ -31,6 +31,7 @@ jobs:
             - name: Check commit message for specific keywords
               run: |
                 text=$(git log -1 --no-merges --pretty=%B)
+                echo $text
                 if [[ $text =~ (fix|patch) ]]; then
                   npm run release -- --release-as patch
                   echo {{ Patching Versioning }}
