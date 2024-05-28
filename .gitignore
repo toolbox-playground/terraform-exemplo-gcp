@@ -1,1 +1,33 @@
-node_modules/*
+# Terraform files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+
+# Exclude .terraform directory and its contents
+.terraform/
+
+# Terraform variable files
+*.tfvars
+*.tfvars.json
+
+# Terraform plan files
+*.tfplan
+
+# Ignore override files as they are usually local changes
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore any generated files or folders
+.terraform.lock.hcl
+.terraformrc
+terraform.rc
+
+# Ignore sensitive data files
+secrets.tfvars
+
+# Ignore GCP json files
+gcp.json
