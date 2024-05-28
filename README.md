@@ -31,7 +31,7 @@ Seguir passo a passo da instalação do [gcloud sdk](https://cloud.google.com/sd
 - Dentro de cada `main.tf`, alterar os placeholder como: `<ALGUMA_COISA_ESCRITA>`
 ~- Criar uma variavem de ambiente `GOOGLE_APPLICATION_CREDENTIALS` e adicione o conteúdo do .json da sua service account conforme orientado ~
 - Faça download da chave .json para autenticar com o Google Cloud e salve na raiz do projeto com o nome `gcp.json`
-- Execute a pré configuração do ambiente: 
+- Execute a pré configuração do ambiente:\
 *Para Windows com powershell*
 ```
 $jsonContent = Get-Content gcp.json | ConvertFrom-Json
@@ -51,16 +51,16 @@ Em casos de dúvidas, siga o passo-a-passo [aqui](https://registry.terraform.io/
 
 ### Pastar de exercícios
 
-*1 - Variaveis estáticas*
-Aqui encontraremos um cenário simples, onde todos os parametros já estarão no arquivo main.tf.
-*2 - Variaveis dinâmicas*
-Aqui encontraremos um cenário onde passaremos os dados através de um arquivo ou por command-line.
-*3 - Depends On*
-Aqui encontraremos um cenário onde a criação do recurso depende da criação de outro recurso.
-*4 - Deletando Recurso*
-Aqui, removeremos um projeto do arquivo main.tf.
-*5 - Limpando todos recursos*
-Aqui usaremos o destroy para eliminar nossa infra.
+*1 - Variaveis estáticas*\
+Aqui encontraremos um cenário simples, onde todos os parametros já estarão no arquivo main.tf.\
+*2 - Variaveis dinâmicas*\
+Aqui encontraremos um cenário onde passaremos os dados através de um arquivo ou por command-line.\
+*3 - Depends On*\
+Aqui encontraremos um cenário onde a criação do recurso depende da criação de outro recurso.\
+*4 - Deletando Recurso*\
+Aqui, removeremos um projeto do arquivo main.tf.\
+*5 - Limpando todos recursos*\
+Aqui usaremos o destroy para eliminar nossa infra.\
 
 ## Contribuindo
 Contribuições são bem-vindas! Por favor, leia o arquivo [CONTRIBUTING.md](CONTRIBUTING.md) para mais detalhes.
