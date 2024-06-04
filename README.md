@@ -60,9 +60,7 @@ Aqui encontraremos um cenário onde passaremos os dados através de um arquivo o
 *3 - Depends On*\
 Aqui encontraremos um cenário onde a criação do recurso depende da criação de outro recurso.\
 *4 - Deletando Recurso*\
-Aqui, removeremos um projeto do arquivo main.tf.\
-*5 - Limpando todos recursos*\
-Aqui usaremos o destroy para eliminar nossa infra.\
+Aqui, removeremos recursos criados pelo `main.tf.` usando destroy.\
 
 ## Contribuindo
 Contribuições são bem-vindas! Por favor, leia o arquivo [CONTRIBUTING.md](CONTRIBUTING.md) para mais detalhes.
