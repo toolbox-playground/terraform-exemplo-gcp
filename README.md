@@ -29,9 +29,10 @@ Seguir passo a passo da instalação do [gcloud sdk](https://cloud.google.com/sd
 
 - É muito importante conhecer os comandos básicos de terraform. 
 - Dentro de cada `main.tf`, alterar os placeholder como: `<ALGUMA_COISA_ESCRITA>`
-~- Criar uma variavem de ambiente `GOOGLE_APPLICATION_CREDENTIALS` e adicione o conteúdo do .json da sua service account conforme orientado ~
+~- Criar uma variavem de ambiente `GOOGLE_CREDENTIALS` e adicione o conteúdo do .json da sua service account conforme orientado ~
 - Faça download da chave .json para autenticar com o Google Cloud e salve na raiz do projeto com o nome `gcp.json`
 - Execute a pré configuração do ambiente:\
+
 *Para Windows com powershell*
 ```
 $jsonContent = Get-Content gcp.json | ConvertFrom-Json
@@ -42,6 +43,7 @@ terraform init; terraform plan;
 
 *Para Linux*
 ```
+export GOOGLE_CREDENTIALS=$(cat gcp.json | jq -c )
 export GOOGLE_APPLICATION_CREDENTIALS=gcp.json
 terraform init && terraform plan
 ```

@@ -8,10 +8,6 @@ crash.log
 # Exclude .terraform directory and its contents
 .terraform/
 
-# Terraform variable files
-*.tfvars
-*.tfvars.json
-
 # Terraform plan files
 *.tfplan
 
