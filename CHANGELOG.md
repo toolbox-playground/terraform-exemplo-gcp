@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## 1.0.9 (2024-06-04)
+
+
+### Bug Fixes
+
+* ajustando README.md ([b0150d4](https://github.com/toolbox-playground/terraform-exemplo-basico-gcp/commit/b0150d4b22f6fe637d404121b49c3862ab289bcc))
+
 ## 1.0.8 (2024-06-04)
 
 ## 1.0.7 (2024-05-28)
