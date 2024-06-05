@@ -23,5 +23,5 @@ terraform apply -auto-approve
 
 Agora execute o comando destroy para que toda a infra requisitada seja desturída
 ```
-terraform apply -auto-approve
+terraform destroy -auto-approve
 ```
