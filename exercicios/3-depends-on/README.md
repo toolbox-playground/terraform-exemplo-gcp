@@ -22,3 +22,8 @@ terraform apply -auto-approve
 ```
 
 O comando chama o módulo para criar o serviço no Google Cloud Run, com a dependência explícita no bucket criado.
+
+Por fim, execute o comando que irá atualizar destruir a infra criada
+```
+terraform destroy -auto-approve
+```
