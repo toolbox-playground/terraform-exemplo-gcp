@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## 1.0.11 (2024-06-05)
+
+
+### Bug Fixes
+
+* readme do destroy ([13b7353](https://github.com/toolbox-playground/terraform-exemplo-basico-gcp/commit/13b73530afb2911f9534af68d80a88b5c097465a))
+
 ## 1.0.10 (2024-06-05)
 
 
