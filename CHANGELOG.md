@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## 1.0.12 (2024-06-06)
+
+
+### Bug Fixes
+
+* Tirando o latest que estava 'hard-coded' ([8c042ca](https://github.com/toolbox-playground/terraform-exemplo-basico-gcp/commit/8c042cadd247369e5d0bc102c7d86b0f2c7a292a))
+
 ## 1.0.11 (2024-06-05)
 
 
