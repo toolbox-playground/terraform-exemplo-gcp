@@ -13,7 +13,7 @@ resource "google_cloud_run_v2_service" "default" {
 
   template {
     containers {
-      image = "${var.container}:latest"
+      image = "${var.container}"
       ports {
         name           = var.container_port_name
         container_port = var.container_port
