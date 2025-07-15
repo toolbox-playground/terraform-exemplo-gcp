@@ -1,0 +1,36 @@
+name: Terraform Security Check with Checkov
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**'  
+  pull_request:
+    branches:
+      - main
+    paths:
+      - '**'  
+  workflow_dispatch:  
+    inputs:  
+      name:  
+        description: 'Acionador manual do Fluxo de Trabalho'  
+
+jobs:
+  checkov-scan:
+    runs-on: ubuntu-latest  
+
+    steps:
+      - name: Checkout do Repositório  
+        uses: actions/checkout@v2  
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.12 
+
+      - name: Test with Checkov
+        id: checkov
+        uses: bridgecrewio/checkov-action@master 
+        with:
+          directory: checkov/tf 
+          framework: terraform 
